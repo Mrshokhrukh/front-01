@@ -23,7 +23,6 @@ function ekrangaChiqarish() {
 ekrangaChiqarish();
 
 
-
 function remove(i) {
     array.splice(i, 1)
     ekrangaChiqarish()

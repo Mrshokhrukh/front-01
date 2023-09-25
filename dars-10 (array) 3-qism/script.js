@@ -1,37 +1,5 @@
-// ==>  splice (+)
-// ==>  includes (+)
-// ==>  lastIndexOf (+)
-// ==>  slice (+)
-// ==>  indexOf (+)
-// ==>  shift (+)
-// ==>  unshift (+)
-// ==>  toString (+)
-// ==>  pop (+)
-// ==>  push (+)
-// ==>  concat (+)
-// ==>  join (+)
-// ==>  split (+)
 
-// -------------------
-
-// ==>  at (+)
-// ==>  length (+)
-// ==>  reverse (+)
-// ==>  sort (+)
-// ==>  toLowercase (+)
-
-// -----------------------
-
-// ==>  forEach (-)
-// ==>  map (-)
-// ==>  filter (-)
-// ==>  find (-)
-// ==>  findIndex (-)
-// ==>  every (-)
-// ==>  some (-)
-// ==>  reduce (-)
-
-
+// length
 
 // let a = [2, 4, 3, 5, 7, 8, 9] // -1 oxirgisi
 
@@ -46,6 +14,9 @@
 
 
 // plans for: 18.09.2023, sort,  for / for in / for of
+
+
+
 
 
 
