@@ -28,12 +28,16 @@
 // -----------------------
 
 
-// ==>  forEach (-)
-// ==>  map (-)
-// ==>  filter (-)
-// ==>  find (-)
-// ==>  findIndex (-)
-// ==>  every (-)
-// ==>  some (-)
+// ==>  forEach (+)
+// ==>  map (+)
+// ==>  filter (+)
+// ==>  find (+)
+// ==>  findIndex (+)
+// ==>  every (+)
+// ==>  some (+)
+
+// ----
+
 // ==>  reduce (-)
+// ==>  flat (-)
 
