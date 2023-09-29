@@ -31,9 +31,7 @@ function startGame() {
         v.innerHTML = ''
         v.addEventListener('click', handleClick, { once: true });
     })
-
 }
-
 
 function handleClick(e) {
     turn.innerHTML = `${playerTurn} turn`
@@ -41,7 +39,6 @@ function handleClick(e) {
     let clickedBox = e.target;
     selected(clickedBox, playerTurn);
     currentTurn = currentTurn == X_TURN ? CIRCLE_TURN : X_TURN
-
 
     if (isWon()) {
         gameOver(currentTurn)
@@ -53,7 +50,6 @@ function handleClick(e) {
         }
     }
 }
-
 
 function isDraw() {
     return winningCominations.every((v, i) => {
