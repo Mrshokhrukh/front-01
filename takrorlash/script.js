@@ -3,7 +3,9 @@
 //     son = prompt('Son kiriting')
 // }
 
+
 // --------------------------
+
 
 // let salom = []
 // let a = prompt('son kiriting');
@@ -17,6 +19,7 @@
 //         result += +salom[i];
 //     }
 // }
+
 
 
 // do{
