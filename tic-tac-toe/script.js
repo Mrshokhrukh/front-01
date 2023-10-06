@@ -38,7 +38,7 @@ function handleClick(e) {
     playerTurn = playerTurn === X_TURN ? CIRCLE_TURN : X_TURN;
     let clickedBox = e.target;
     selected(clickedBox, playerTurn);
-    currentTurn = currentTurn == X_TURN ? CIRCLE_TURN : X_TURN
+    currentTurn = currentTurn == CIRCLE_TURN ? X_TURN : CIRCLE_TURN
 
     if (isWon()) {
         gameOver(currentTurn)
