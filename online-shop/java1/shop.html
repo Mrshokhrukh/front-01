@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./shop.js" defer></script>
+    <link rel="stylesheet" href="./shop.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bigdiv">
+      <div class="create">
+        <h1>create product</h1>
+        <div class="add_prouct">
+          <label for="name">name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="enter here..."
+          />
+          <br />
+          <br />
+          <label for="price">price</label>
+          <input
+            type="number"
+            name="price"
+            id="price"
+            placeholder="enter here..."
+          />
+          <br />
+          <br />
+          <label for="img">img</label>
+          <input type="text" name="img" id="img" placeholder="enter here..." />
+        </div>
+        <br />
+        <br />
+        <button onclick="addProduct()">add</button>
+      </div>
+      <div class="company">
+        <h2 style="color: palevioletred">COMPANY INFORMATION</h2>
+        <h2 style="color: crimson">TOTAL BALANCE : $10.000</h2>
+        <h2>Income : $105</h2>
+        <h2>Sold Products : 3</h2>
+        <h2 id="product_quant">PRODUCT QUANT :</h2>
+        <h2>Clients : 24</h2>
+        <h2>Revenue : $455</h2>
+      </div>
+
+      <div class="all">
+        <h1>ALL PRODUCTS</h1>
+        <input type="text" placeholder="search product..." />
+        <div class="bt">
+          <button>sort</button>
+          <button>filter</button>
+          <button>find s></button>
+          <button>low to high</button>
+          <button>high to low</button>
+        </div>
+
+        <table>
+          <caption
+            style="font-size: 45px; color: dodgerblue; padding-bottom: 35px"
+          >
+            PRODUCTS
+          </caption>
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody class="products"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
