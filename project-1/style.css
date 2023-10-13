@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap");
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+}
+
+.elements {
+  display: flex;
+  gap: 50px;
+}
+.elements a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  height: 30px;
+}
+.elements a:hover {
+  border-bottom: 2px solid black;
+}
+.elements a:nth-child(2) {
+  border: none;
+}
+.elements a:nth-child(4) {
+  border: none;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 4px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.bx {
+  font-size: 33px;
+}
+
+.icon_login {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  cursor: pointer;
+}
+.icon_login .cart_icon {
+  position: relative;
+}
+.icon_login .cart_icon span {
+  position: absolute;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: -4px;
+}
+
+@media (max-width: 1101px) {
+  .elements {
+    gap: 20PX;
+  }
+  .elements a {
+    font-size: 14px;
+    height: 20px;
+  }
+  .bx {
+    font-size: 27px;
+  }
+  .button {
+    padding: 4px 10px;
+  }
+  .icon_login {
+    gap: 20px;
+  }
+  .icon_login .cart_icon span {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .elements {
+    display: none;
+  }
+  .icon_login {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

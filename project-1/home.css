@@ -1,0 +1,27 @@
+.home {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-around;
+}
+
+.img img {
+  width: 520px;
+  height: 350px;
+  border-radius: 25px;
+}
+
+.cont h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+.cont h6 {
+  font-size: 16px;
+  color: rgb(95, 91, 91);
+  font-weight: 600;
+  margin-top: 30px;
+}
+.cont button {
+  width: 125px;
+  height: 38px;
+  margin-top: 40px;
+}/*# sourceMappingURL=home.css.map */
