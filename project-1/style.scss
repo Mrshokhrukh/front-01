@@ -9,12 +9,17 @@
   width: 90%;
   margin: auto;
 }
+
+.header{
+  background-color: rgb(236, 236, 236);
+}
+
 .head {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(236, 236, 236);
   padding: 20px;
+
 }
 .elements {
   display: flex;
