@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .game_board {
+      width: 400px;
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+    .score {
+      display: flex;
+      width: 400px;
+      justify-content: space-between;
+      height: 100px;
+    }
+  </style>
+
+  <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="game_board">
+      <div class="player_side">
+        <h1>rock</h1>
+      </div>
+      <div class="comp_side">
+        <h1>paper</h1>
+      </div>
+    </div>
+
+    <div class="score">
+      <h2 class="player">player: 0</h2>
+      <h2 class="draw"></h2>
+      <h2 class="comp">computer: 0</h2>
+    </div>
+
+    <div class="buttons">
+      <button onclick="gameStart('rock')">rock</button>
+      <button onclick="gameStart('paper')">paper</button>
+      <button onclick="gameStart('scissors')">scissors</button>
+    </div>
+  </body>
+</html>
