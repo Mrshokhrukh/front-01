@@ -28,7 +28,8 @@ function checkWin(comp, player) {
     } else if (comp == 'paper' && player == 'rock') {
         computerScore++
     }
-    else if (comp == 'paper' && player == 'scissors ') {
+    
+    else if (comp == 'paper' && player == 'scissors') {
         playerScore++
     } else if (comp == 'rock' && player == 'paper') {
         playerScore++

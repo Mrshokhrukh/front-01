@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./problems.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="border">
+      <caption>
+        add product
+      </caption>
+      <thead>
+        <tr>
+          <td colspan="4" class="add_product_td">
+            <form onsubmit="addProduct(event)">
+              <input type="text" id="product" placeholder="add product.." />
+              <button >Add Porduct +</button>
+            </form>
+          </td>
+        </tr>
+
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th colspan="2">buttons</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
