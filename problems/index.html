@@ -9,27 +9,77 @@
     <title>Document</title>
   </head>
   <body>
-    <table border="border">
-      <caption>
-        add product
-      </caption>
-      <thead>
-        <tr>
-          <td colspan="4" class="add_product_td">
-            <form onsubmit="addProduct(event)">
-              <input type="text" id="product" placeholder="add product.." />
-              <button >Add Porduct +</button>
-            </form>
-          </td>
-        </tr>
+    <div class="container">
+      <table border="border" class="table">
+        <caption>
+          add product
+        </caption>
+        <thead>
+          <tr>
+            <td colspan="4" class="add_product_td">
+              <form onsubmit="addProduct(event)">
+                <input type="text" id="product" placeholder="add product.." />
+                <button>Add Porduct +</button>
+              </form>
+            </td>
+          </tr>
 
-        <tr>
-          <th>id</th>
-          <th>name</th>
-          <th colspan="2">buttons</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th colspan="2">buttons</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="right">
+        <table border="border" class="table_2">
+          <tr>
+            <td><button onclick="sortEl()">sort</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="concatEl()">concat</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="filterEl()">filter</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="searchInput()">search</button></td>
+            <input
+              type="search"
+              class="search_el"
+              placeholder="search product.."
+              oninput="handleChange()"
+            />
+          </tr>
+          <tr>
+            <td><button onclick="findEl()">find</button></td>
+          </tr>
+        </table>
+
+        <div class="two_tables">
+          <table class="table_3" border="border">
+            <tr>
+              <th>id</th>
+              <th>name</th>
+            </tr>
+            <tbody class="newTableBody"></tbody>
+          </table>
+
+          <table class="table_4" border="border">
+            <caption>
+              trash
+            </caption>
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>name</th>
+              </tr>
+            </thead>
+            <tbody class="removedTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
