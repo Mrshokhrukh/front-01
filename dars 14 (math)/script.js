@@ -46,3 +46,14 @@ function checkWin(comp, player) {
     cmScore.innerHTML = `computer : ${computerScore}`
 };
 
+
+
+
+
+// let body = document.body;
+// function changeColor() {
+//     let red = Math.floor(Math.random() * 255)
+//     let green = Math.floor(Math.random() * 255)
+//     let blue = Math.floor(Math.random() * 255)
+//     body.style.backgroundColor = `rgb(${red},${green},${blue})`
+// }
