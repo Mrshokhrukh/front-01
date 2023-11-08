@@ -32,7 +32,7 @@
 
 // 8. Quyidagi 3ta function stringning bir qismini ola oladi
 //    slice(startIndex, endIndex) - manfiy qiymatlar ham qabul qila oladi
-//    substing(startIndex, endIndex) - manfiy qiymatlar qabul qilmaydi
+//    substring(startIndex, endIndex) - manfiy qiymatlar qabul qilmaydi
 //    substr(startIndex, length) 
 
 
