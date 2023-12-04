@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.text {
+  text-align: center;
+  line-height: 32px;
+  color: dodgerblue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: orange;
+  margin: 10px 0;
+}
+h2 {
+  cursor: pointer;
+}
