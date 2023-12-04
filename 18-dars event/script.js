@@ -1,32 +1,48 @@
-let cont_1 = document.querySelectorAll('.container')[0]
-let cont_2 = document.querySelectorAll('.container')[1]
-let cont_3 = document.querySelectorAll('.container')[2]
-let cont_4 = document.querySelectorAll('.container')[3]
-
-
+let containers = document.querySelectorAll('.container')
+let cont_first = document.querySelectorAll('.container')[0]
+let add = document.getElementById('add_item')
 let items = document.querySelectorAll('#item');
 let draggedItem = null;
-items.forEach((item) => {
-    item.addEventListener('dragstart', (e) => {
-        draggedItem = e.target
-    })
 
-    cont_1.addEventListener('dragover', dragover)
-    cont_2.addEventListener('dragover', dragover)
-    cont_3.addEventListener('dragover', dragover)
-    cont_4.addEventListener('dragover', dragover)
-    // ----------------------------
-    cont_1.addEventListener('drop', dropItem)
-    cont_2.addEventListener('drop', dropItem)
-    cont_3.addEventListener('drop', dropItem)
-    cont_4.addEventListener('drop', dropItem)
+let form = document.querySelector('form')
 
-
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let itemDiv = document.createElement('div');
+    itemDiv.setAttribute('draggable', 'true');
+    itemDiv.id = 'item'
+    itemDiv.textContent = add.value
+    add.value = '';
+    cont_first.appendChild(itemDiv)
+    items = document.querySelectorAll('#item')
+    render()
 })
 
-function dragover(event) {
-    event.preventDefault()
+
+function render() {
+    items.forEach((item) => {
+        item.addEventListener('dragstart', (e) => {
+            draggedItem = e.target;
+            draggedItem.classList.add('dragging');
+        })
+        item.addEventListener('dragend', (e) => {
+            draggedItem = null;
+            e.target.classList.remove('dragging')
+        })
+    })
+
 }
-function dropItem(event) {
-    event.target.appendChild(draggedItem)
-}
+
+containers.forEach((box) => {
+    box.addEventListener('dragover', (e) => {
+        e.preventDefault()
+        box.classList.add('accept');
+    })
+    box.addEventListener('dragleave', () => {
+        box.classList.remove('accept');
+    })
+    box.addEventListener('drop', () => {
+        box.classList.remove('accept');
+        box.append(draggedItem)
+    })
+})
