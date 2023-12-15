@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./regex.js" defer></script>
+    <title>Document</title>
+  </head>
+  <style>
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+
+    .successInput {
+      border: 2px solid rgb(11, 243, 135);
+      box-shadow: 2px 2px 4px 2px rgb(11, 243, 135),
+        -2px -2px 4px 2px rgb(11, 243, 135);
+    }
+    .errorInput {
+      border: 2px solid rgb(243, 11, 11);
+      box-shadow: 2px 2px 4px 2px rgb(243, 11, 11),
+        -2px -2px 4px 2px rgb(243, 11, 11);
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgb(29, 28, 28);
+    }
+    p {
+      margin-top: 30px;
+      width: 300px;
+      background-color: white;
+    }
+    input {
+      height: 35px;
+      border: white;
+      outline: none;
+      border-radius: 5px;
+      padding: 0 5px;
+    }
+    button {
+      cursor: pointer;
+      height: 35px;
+    }
+    button.disabled {
+      background-color: gray;
+    }
+  </style>
+  <body>
+    <form id="form_validate">
+      <input type="text" id="username" />
+      <button id="button" class="disabled">submit</button>
+    </form>
+    <p class="error"></p>
+  </body>
+</html>
