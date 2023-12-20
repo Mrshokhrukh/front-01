@@ -8,13 +8,26 @@
     <title>Date</title>
   </head>
   <style>
-    * {
-      margin-left: 100px;
+    body {
+      transition: 0.4s linear;
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+    button:nth-child(1) {
+      margin-top: -100px;
     }
   </style>
   <body>
-    <input type="date" id="date" />
+    <!-- <input type="date" id="date" />
     <button onclick="showDate()">stop</button>
-    <h2></h2>
+    <h2></h2> -->
+
+    <button onclick="start()">start</button>
+    <button onclick="stop()">stop</button>
   </body>
 </html>
